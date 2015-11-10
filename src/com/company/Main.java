@@ -3,15 +3,12 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-
-
         System.out.println(isEven("lineline"));
         System.out.println(isEven("lineine"));
 
         System.out.println(isEven("lol"));
         System.out.println(isEven("lolo"));
 
-	// write your code here
     }
 
     private static boolean isEven(String word) {
@@ -20,7 +17,7 @@ public class Main {
             return true;
         }
 
-        char c = word.charAt(0);
+        char c = word.charAt(0); //bad variable name
         word = word.substring(1);
 
         if(word.contains(c + ""))
@@ -31,5 +28,6 @@ public class Main {
 
         return false;
     }
+    //this is pretty much the same as Ray, try to do it by yourself you wont be teaming up to interview
 
 }
